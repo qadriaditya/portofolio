@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS =========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="icon" href="assets/img/icon.png" type="image/png" />
+
+    <title>Qadri Aditya Hadi Ramadhan</title>
+  </head>
+  <body class="scale-cvv">
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="" class="nav__logo">Qadri Aditya Hadi Ramadhan</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt nav__icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/Profile.jpg" alt="" class="home__img" />
+
+                <h1 class="home__title"><b>QADRI ADITYA HADI RAMADHAN</b></h1>
+                <h3 class="home__profession">Front-End Developer</h3>
+
+                <div>
+                  <a
+                    download=""
+                    href="assets/pdf/CV_Andera-Singgih-Pratama.pdf"
+                    class="home__button-movil"
+                    >Download</a
+                  >
+                </div>
+              </div>
+              <div class="home_address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i>Cibitung, Bekasi, Jawa
+                  Barat
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i
+                  >qadriaditya6@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i>081212853893
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <a
+              href="assets/pdf/CV_Andera-Singgih-Pratama.pdf"
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></a>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/qadri-aditya-hadi-ramadhan-177763355/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> Qadri Aditya
+                Hadi Ramadhan
+              </a>
+              <a
+                href="https://www.instagram.com/_.h0odie/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i> Qadri Aditya H.R.
+              </a>
+              <a
+                href="https://github.com/qadriaditya"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> qadriaditya
+              </a>
+            </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">
+              cepat belajar dan selalu beradaptasi dengan hal-hal baru. Memiliki
+              kemampuan untuk membuat antarmuka pengguna yang responsif dan
+              intuitif, dengan fokus pada detail dan pengalaman pengguna.
+              Terbiasa bekerja secara mandiri maupun dalam tim, dan selalu
+              berkomitmen untuk meningkatkan kualitas proyek.
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Bachelor of Computer Science: Software Engineering
+                  </h3>
+                  <span class="education__studies">Telkom University</span>
+                  <span class="education__year">2022 - Sekarang</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Vocational High School Diploma: Multimedia
+                  </h3>
+                  <span class="education__studies">SMK Telkom Cirebon</span>
+                  <span class="education__year">2019 - 2022</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time"></div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+        </div>
+
+        <div class="resume__right">
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data skills__align">
+                <li class="skills__name">
+                  <p class="skills__box">Git</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box">GitHub</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box">Visual Studio Code</p>
+                </li>
+              </ul>
+
+              <ul class="skills__data skills__align">
+                <li class="skills__name">
+                  <p class="skills__box">HTML</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box">CSS</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box">Java Script</p>
+                </li>
+              </ul>
+
+              <ul class="skills__data skills__align">
+                <li class="skills__name">
+                  <p class="skills__box">Canva</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box">Figma</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Project Mata Kuliah DPW 1</h3>
+                  <span class="experience__company"
+                    >Front-end dan Back-end Developer</span
+                  >
+                  <p class="experience__description">
+                    Front-End Developer-Website, Pringgading Mendesain dan
+                    mengembangkan UI responsif menggunakan HTML, CSS, dan
+                    JavaScript. Mengintegrasikan API, memastikan tampilan
+                    konsisten di berbagai perangkat, serta meningkatkan performa
+                    dan UX.
+                  </p>
+                  <p class="experience__description">
+                    Back-End Developer-Website Pringgading, database untuk
+                    mendukung fitur dinamis..
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Project Mata Kuliah Design Interaksi
+                  </h3>
+                  <span class="experience__company">Front-End Developer</span>
+                  <p class="experience__description">
+                    Membuat antarmuka website UKM yang responsif, ramah
+                    pengguna. Membangun tampilan yang mudah di pahami
+                    menggunakan HTML, CSS, dan JavaScript.
+                  </p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    Project Mata Kuliah Tingkat II
+                  </h3>
+                  <span class="experience__company">Front-End Developer</span>
+                  <p class="experience__description">
+                    Mendesain dan membangun antarmuka website peminjaman barang
+                    yang responsif dan mudah digunakan oleh mahasiswa dan staff
+                    Telkom University. Mengimplementasikan HTML, CSS, dan
+                    JavaScript untuk menampilkan informasi barang, status
+                    peminjaman, serta form interaktif. Fokus pada tampilan yang
+                    bersih dan navigasi yang intuitif untuk mendukung efisiensi
+                    proses peminjaman.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== REFERENCES ==========-->
+          <!-- <section class="references section" id="references">
+            <h2 class="section-title">References</h2>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Sr. Direcctor</span>
+                <h3 class="references__title">Mr. Singgih</h3>
+                <ul class="references__contact">
+                  <li>Phone: +6281229509087</li>
+                  <li>Email: anderasinggih1@gmai.com</li>
+                </ul>
+              </div>
+
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Sr. Direcctor</span>
+                <h3 class="references__title">Mr. Singgih</h3>
+                <ul class="references__contact">
+                  <li class="references__data">Phone: +6281229509087</li>
+                  <li class="references__data">
+                    Email: anderasinggih1@gmai.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section> -->
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="skills__content languages__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <p class="skills__box languages__box">Indonesian Native</p>
+                </li>
+                <li class="skills__name">
+                  <p class="skills__box languages__box">English Beginner</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interest</h2>
+
+            <div class="interest_container bd-grid">
+              <div class="skills__content bd-grid">
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <p class="skills__box">Technology</p>
+                  </li>
+                  <li class="skills__name">
+                    <p class="skills__box">Personal Development</p>
+                  </li>
+                </ul>
+
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <p class="skills__box">UI / UX</p>
+                  </li>
+                </ul>
+
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <p class="skills__box">Web Development</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!--========== PROJECT ==========-->
+          <section class="projects section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects__content bd-grid">
+              <ul class="skills__data">
+                <li class="projects__name">
+                  <div class="projects__box">
+                    <a
+                      href="https://www.instagram.com/emostudio.official"
+                      class="projects__title"
+                      ><b>Website RM.Pringgading</b></a
+                    >
+
+                    <div class="projects__description">
+                      Website RM. Pringgading dengan tampilan menarik,
+                      responsif, dan sistem terintegrasi.
+                    </div>
+                    <div class="taglinecontainer">
+                      <p class="taglineprojects__box">Figma</p>
+                      <p class="taglineprojects__box">HTML</p>
+                      <p class="taglineprojects__box">CSS</p>
+                      <p class="taglineprojects__box">JavaScript</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="projects__name">
+                  <div class="projects__box">
+                    <a
+                      href="https://www.figma.com/design/64HWuAlwFnD4C87cjz7EGB/Website-UKM-CENTER-ITTP?t=IoSirD2co2eIERrU-0"
+                      class="projects__title"
+                      ><b>Tampilan Website UKM</b></a
+                    >
+
+                    <div class="projects__description">
+                      Website UKM dengan desain modern, responsif, dan mendukung
+                      kemudahan akses informasi.
+                    </div>
+                    <div class="taglinecontainer">
+                      <p class="taglineprojects__box">Figma</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="projects__name">
+                  <div class="projects__box">
+                    <a
+                      href="https://www.figma.com/design/146stJCjx5ZdiIJsjeSs0u/proyek-II?node-id=12-5620&p=f&t=OLaYDgfLmJbiXGfG-0"
+                      class="projects__title"
+                      ><b>Tampilan Website Sistem peminjaman TUP </b></a
+                    >
+
+                    <div class="projects__description">
+                      Website Peminjaman TUP dengan UI/UX sederhana, frontend
+                      responsif, dan sistem terintegrasi.
+                    </div>
+                    <div class="taglinecontainer">
+                      <p class="taglineprojects__box">Figma</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <!-- <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">Certified lover boy</h3>
+                <p class="certificate__description">
+                  lorem ipsum asdfjnaasbnais asdf as a as asd a da sd asfdas a
+                  adfsasd asdf adf
+                </p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">Certified lover boy</h3>
+                <p class="certificate__description">
+                  lorem ipsum asdfjnaasbnais asdf as a as asd a da sd asfdas a
+                  adfsasd asdf adf
+                </p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">Certified lover boy</h3>
+                <p class="certificate__description">
+                  lorem ipsum asdfjnaasbnais asdf as a as asd a da sd asfdas a
+                  adfsasd asdf adf
+                </p>
+              </div>
+            </div>
+          </section> -->
+        </div>
+      </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#home" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </body>
+</html>
